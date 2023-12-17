@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from Google_Integration import Google_Integration
 from Models.Event import Event
 from datetime import datetime, timedelta

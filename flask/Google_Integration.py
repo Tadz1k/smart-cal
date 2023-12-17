@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import datetime
 import os.path
 from Models.Event import Event
@@ -60,7 +62,7 @@ class Google_Integration:
       now = datetime.datetime.utcnow()
 
       start_of_month = datetime.datetime(now.year, now.month, 1)
-      if now.month == 12:  # Jeśli aktualny miesiąc to grudzień
+      if now.month == 12:  # If current month is december
           end_of_month = datetime.datetime(now.year + 1, 1, 1, 0, 0, 0) - datetime.timedelta(days=1)
       else:
           end_of_month = datetime.datetime(now.year, now.month + 1, 1, 0, 0, 0) - datetime.timedelta(days=1)
