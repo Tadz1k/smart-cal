@@ -1,0 +1,15 @@
+<script>
+    document.getElementById('datePicker').valueAsDate = new Date();
+</script>
+
+
+<form action="{{ url_for("add")}}" method="post">
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description" placeholder="description"><br>
+    <label for="Start date">Start date:</label>
+    <input type="datetime-local" id="sdate", name="sdate" value="<?php echo date('Y-m-d'); ?>" /><br>
+    <label for="End date">End date:</label>
+    <input type="datetime-local" id="edate", name="edate" value="<?php echo date('Y-m-d'); ?>" /><br>
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" placeholder="location"><br>
+    <button type="submit">Add</button>
